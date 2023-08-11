@@ -1,0 +1,33 @@
+header {
+  background-color: rgb(223, 70, 70);
+  }
+  
+  .logbar {
+    display: flex;
+    justify-content: flex-end;
+    padding-right:30px;
+    padding-top: 15px;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .search {
+    float: right;
+    margin-right: 30px;
+  }
+  
+  input {
+    width: 200px;
+    height: 25px;
+  }
+  
+  button {
+    width: 30px;
+    height: 25px;
+  }
+  
+  .logo {
+    clear: both;
+    text-align: center;
+  }
+  

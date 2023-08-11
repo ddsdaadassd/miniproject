@@ -1,12 +1,17 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Main from './Component/Main';
+import Main from './pages/Main';
+import data from './mockData';
+import { useState } from 'react';
 
 function App() {
+
+  const [food, setFood] =useState(data);
+
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<Main />}></Route>
+        <Route path='/' element={<Main food={food}/>}></Route>
         {/* <Route path='/menu' element={<Menu />}></Route>
         <Route path='/new' element={<New />}></Route>
         <Route path='/best' element={<Best />}></Route>
