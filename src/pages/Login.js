@@ -10,7 +10,7 @@ const Login = () => {
     <>
       <Header />
       <Nav />
-      <div className='loginbox'>
+      <div className='Login'>
         <div className='title'>로그인</div>
         <form>
           <div className='member-login'>회원 로그인</div>

@@ -5,6 +5,7 @@ import data from './mockData';
 import { useState } from 'react';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
+import Menu from './pages/Menu';
 
 function App() {
 
@@ -14,8 +15,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Main food={food}/>}></Route>
-        {/* <Route path='/menu' element={<Menu />}></Route>
-        <Route path='/new' element={<New />}></Route>
+        <Route path='/menu' element={<Menu food={food}/>}></Route>
+        {/* <Route path='/new' element={<New />}></Route>
         <Route path='/best' element={<Best />}></Route>
         <Route path='/set' element={<Set />}></Route>
         <Route path='/sale' element={<Sale />}></Route>*/}

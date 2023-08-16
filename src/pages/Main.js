@@ -8,8 +8,8 @@ import { useState } from 'react';
 
 const Main = ({ food }) => {
   const [md, setMd] = useState(food.slice(0, 4));
-
-  console.log(md);
+  const [best, setBest] = useState(food.slice(4, 6));
+  const [newitem, setNewItem] = useState(food.slice(8, 10));
 
   function NoTransitionExample() {
     return (
@@ -38,7 +38,7 @@ const Main = ({ food }) => {
           <div className='mainMenu'>
             <div>
               <div className='title'>이달의 <span>MD추천메뉴</span></div>
-              <div className='foodcard'>
+              <div className='mdfoodcard'>
                 {
                   md.map((data, i) => {
                     return (
@@ -51,11 +51,31 @@ const Main = ({ food }) => {
             <div>
               <div>
                 <div className='title'>주간 <span>베스트</span></div>
-                
+                <div className='foodcard'>
+                {
+                  best.map((data, i) => {
+                    return (
+                      <MenuCard data={data} key={i} />
+                    );
+
+                  })
+
+                }
+                </div>
               </div>
               <div>
                 <div className='title'>새로운 <span>상품</span></div>
-               
+                <div className='foodcard'>
+                {
+                  newitem.map((data, i) => {
+                    return (
+                      <MenuCard data={data} key={i} />
+                    );
+
+                  })
+
+                }
+                </div>
               </div>
             </div>
           </div>

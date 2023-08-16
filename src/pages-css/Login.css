@@ -1,7 +1,6 @@
-.loginbox {
+.Login {
   border: 1px solid lightgrey;
-  margin: auto;
-  margin-top: 100px;
+  margin: 100px auto;
   width: 600px;
   height: 480px;
 }
@@ -54,21 +53,22 @@ label {
   color: rgb(155, 155, 155);
 }
 
-.btn {
+.Login .btn {
   display: flex;
   align-items: center;
   width: 600px;
 }
 
-.btn button {
-  margin: 40px 20px;
+.Login .btn button {
+  margin: 0 20px;
   width: 150px;
   height: 45px;
   border: 1px solid lightgrey;
   background-color: white;
+  color: black;
 }
 
-.btn :first-child {
+.Login .btn :first-child {
   background-color: gray;
   color: white;
 }
