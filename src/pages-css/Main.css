@@ -4,11 +4,7 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 1fr;
-}
-
-.carousel {
+.Main {
   height: 400px;
 }
 
@@ -31,6 +27,7 @@ span {
   grid-template-columns: repeat(2, 1fr);
 }
 
+
 .mainMenu .title{
   font-size: 16px;
   font-weight: bold;
@@ -38,9 +35,6 @@ span {
   margin-bottom: 15px;
   text-align: center;
 }
-
-
-
 
 footer {
   margin-top: 40px;

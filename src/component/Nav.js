@@ -7,11 +7,11 @@ const Nav = () => {
   return (
     <nav>
       <ul className='menuList'>
-        <li onClick={() => { navigate('/menu') }}>전체메뉴</li>
-        <li onClick={() => { navigate('/new') }}>신상품</li>
-        <li onClick={() => { navigate('/best') }}>베스트</li>
-        <li onClick={() => { navigate('/set') }}>세트</li>
-        <li onClick={() => { navigate('/sale') }}>SALE</li>
+        <li onClick={() => { navigate('/menu') }} style={{cursor: 'pointer'}}>전체메뉴</li>
+        <li onClick={() => { navigate('/new') }} style={{cursor: 'pointer'}}>신상품</li>
+        <li onClick={() => { navigate('/best') }} style={{cursor: 'pointer'}}>베스트</li>
+        <li onClick={() => { navigate('/set') }} style={{cursor: 'pointer'}}>세트</li>
+        <li onClick={() => { navigate('/sale') }} style={{cursor: 'pointer'}}>SALE</li>
       </ul>
     </nav>
   );

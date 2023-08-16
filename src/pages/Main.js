@@ -7,7 +7,7 @@ import Nav from '../component/Nav';
 import { useState } from 'react';
 
 const Main = ({ food }) => {
-  const [md, setmd] = useState(food.slice(0, 4));
+  const [md, setMd] = useState(food.slice(0, 4));
 
   console.log(md);
 
@@ -29,7 +29,7 @@ const Main = ({ food }) => {
 
   return (
     <>
-      <div className='container'>
+      <div className='Main'>
         <Header />
         <Nav />
 
@@ -44,27 +44,18 @@ const Main = ({ food }) => {
                     return (
                       <MenuCard data={data} key={i} />
                     );
-
                   })
-
                 }
-
               </div>
-
             </div>
             <div>
               <div>
                 <div className='title'>주간 <span>베스트</span></div>
-                {/* <MenuCard food={food} /> */}
-
-
+                
               </div>
               <div>
                 <div className='title'>새로운 <span>상품</span></div>
-
-
-                {/* <MenuCard /> */}
-
+               
               </div>
             </div>
           </div>

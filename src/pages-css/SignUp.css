@@ -1,0 +1,86 @@
+.SignUp {
+  margin: auto;
+  padding: 150px;
+}
+
+.bigtitle {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.smalltitle {
+  font-size: 18px;
+  margin-top: 80px;
+}
+
+.coment {
+  font-size: 12px;
+  float: right;
+}
+
+hr {
+  clear: both;
+}
+
+.clause > :nth-child(2) {
+  margin-top: 30px;
+}
+
+.chkbox {
+  width: 20px;
+  margin-right: 10px ;
+}
+
+.box {
+  width: auto;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  padding-left: 5px;
+}
+
+
+tr > :first-child {
+  background-color: rgb(240, 237, 237);
+  width: 200px;
+  padding: 15px 0 15px 20px;
+}
+
+tr > :nth-child(2) {
+  padding: 10px;
+}
+
+.SignUp button {
+  margin-left: 5px;
+  width: 120px;
+  border: 1px solid lightgray;
+  color: rgb(80, 80, 80);
+  font-size: 15px;
+}
+
+.btn {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.btn > :nth-child(1) {
+  width: 200px;
+  height: 40px;
+  border: 1px solid lightgray;
+  background-color: white;
+  color: black;
+}
+
+.btn > :nth-child(2) {
+  width: 200px;
+  height: 40px;
+  border: 1px solid lightgray;
+  background-color: gray;
+  color: white;
+}
+
+
+
+

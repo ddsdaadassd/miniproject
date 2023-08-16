@@ -32,15 +32,15 @@ let data = [
   },
   {
     id : 5,
-    img : process.env.PUBLIC_URL + '/img/마파두부.png',
-    title: '맛있는 마파두부밀키트(2인분)',
-    price: '7,900원'
-  },
-  {
-    id : 6,
     img : process.env.PUBLIC_URL + '/img/밀페유나베.png',
     title: '야채품은 밀페유나베밀키트(3인분)',
     price: '24,900원'
+  },
+  {
+    id : 6,
+    img : process.env.PUBLIC_URL + '/img/마파두부.png',
+    title: '맛있는 마파두부밀키트(2인분)',
+    price: '7,900원'
   },
   {
     id : 7,
