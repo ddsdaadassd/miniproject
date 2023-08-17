@@ -1,0 +1,16 @@
+footer {
+  margin-top: 40px;
+  display: flex;
+  font-size: 10px;
+}
+
+footer .bold{
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+footer .split {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}

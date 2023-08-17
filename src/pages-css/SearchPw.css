@@ -1,0 +1,53 @@
+.SearchPw .title {
+  margin: 60px 0 0 330px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.SearchPw .box {
+  border: 1px solid lightgrey;
+  margin: 30px auto;
+  width: 600px;
+  height: 480px;
+  padding: 40px;
+}
+
+.SearchPw .smalltitle {
+  margin: 40px 0 5px 0;
+  font-size: 18px;
+}
+
+.SearchPw p {
+  font-size: 12px;
+  color: rgb(189, 188, 188);
+}
+
+.SearchPw input  {
+  margin: 30px 0 0 60px;
+  width: 320px;
+  height: 40px;
+  border: 1px solid lightgray;
+  padding-left: 10px;
+  color:  lightgray;
+  font-size: 13px;
+}
+
+.SearchPw span {
+  color: red;
+  text-decoration: underline;
+}
+
+.SearchPw .coment {
+  margin: 10px 0 0 65px;
+  font-size: 12px;
+  color: rgb(182, 182, 182);
+}
+
+.SearchPw button {
+  margin: 100px 0 0 150px;
+  width: 200px;
+  height: 45px;
+  border: 1px solid lightgrey;
+  background-color: gray;
+  color: white;
+}

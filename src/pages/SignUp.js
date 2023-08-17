@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from '../component/Header';
 import '../pages-css/SignUp.css';
 import Nav from '../component/Nav';
+import Footer from '../component/Footer';
 
 
 const SignUp = () => {
@@ -121,7 +122,7 @@ const SignUp = () => {
               </td>
               <td>
                 <input type='text' />
-                <button >우편번호 검색</button>
+                <button>우편번호 검색</button>
 
               </td>
             </tr>
@@ -157,7 +158,9 @@ const SignUp = () => {
           </table>
 
           <div className='btn'>
-            <button className='signup-btn'>취소</button>
+            <button onClick={() => {
+              navigate('/login');
+            }} className='signup-btn'>취소</button>
             <button onClick={() => {
               window.confirm('회원가입완료');
               navigate('/');
@@ -165,6 +168,7 @@ const SignUp = () => {
           </div>
         </form>
       </div>
+      <Footer />
     </>
   );
 }

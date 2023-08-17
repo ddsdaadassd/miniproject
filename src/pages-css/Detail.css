@@ -1,0 +1,59 @@
+.Detail {
+  padding: 50px;
+}
+
+.Detail img {
+  width: 500px;
+  height: 500px;
+}
+
+.Detail .orderbox {
+  display: flex;
+  align-items: center;
+}
+
+.Detail .textbox {
+  margin-left: 90px;
+}
+
+.Detail .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.Detail .price {
+  font-size: 18px;
+}
+
+.Detail .cnt button {
+  margin: 0 10px;
+  height: 18px;
+  width: 18px;
+  line-height: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.Detail .total {
+  text-align: center;
+  margin-bottom: 50px;
+} 
+
+.Detail .btn button {
+  clear: both;
+  width: 190px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 1px solid white;
+  background-color: rgb(243, 70, 98);
+  color: white;
+}
+
+.Detail hr {
+  margin-bottom: 30px;
+}
+
+
+

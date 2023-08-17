@@ -1,24 +1,24 @@
 .SignUp {
-  margin: auto;
-  padding: 150px;
+  margin: 50px auto;
+  padding: 30px;
 }
 
-.bigtitle {
+.SignUp .bigtitle {
   font-weight: bold;
   font-size: 25px;
 }
 
-.smalltitle {
+.SignUp .smalltitle {
   font-size: 18px;
   margin-top: 80px;
 }
 
-.coment {
+.SignUp .coment {
   font-size: 12px;
   float: right;
 }
 
-hr {
+.SignUp hr {
   clear: both;
 }
 
@@ -26,13 +26,20 @@ hr {
   margin-top: 30px;
 }
 
-.chkbox {
+.SignUp .chkbox {
   width: 20px;
   margin-right: 10px ;
+  margin-left: 30px;
 }
 
-.box {
-  width: auto;
+.SignUp label {
+  position: relative;
+  top: -3.5px;
+}
+
+.SignUp .box {
+  width: 1000px;
+  margin-left: 35px;
 }
 
 .SignUp input {
@@ -42,17 +49,17 @@ hr {
 }
 
 
-tr > :first-child {
+.SignUp tr > :first-child {
   background-color: rgb(240, 237, 237);
   width: 200px;
   padding: 15px 0 15px 20px;
 }
 
-tr > :nth-child(2) {
+.SignUp tr > :nth-child(2) {
   padding: 10px;
 }
 
-.SignUp button {
+.SignUp td button {
   margin-left: 5px;
   width: 120px;
   border: 1px solid lightgray;
@@ -60,12 +67,12 @@ tr > :nth-child(2) {
   font-size: 15px;
 }
 
-.btn {
-  margin: auto;
+.SignUp .btn {
   margin-top: 50px;
+  margin-left: 30%;
 }
 
-.btn > :nth-child(1) {
+.SignUp .btn > :nth-child(1) {
   width: 200px;
   height: 40px;
   border: 1px solid lightgray;
@@ -73,12 +80,17 @@ tr > :nth-child(2) {
   color: black;
 }
 
-.btn > :nth-child(2) {
+.SignUp .btn > :nth-child(2) {
   width: 200px;
   height: 40px;
+  margin-left: 5px;
   border: 1px solid lightgray;
   background-color: gray;
   color: white;
+}
+
+.SignUp span {
+  color: red;
 }
 
 

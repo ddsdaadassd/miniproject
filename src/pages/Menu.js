@@ -1,3 +1,4 @@
+import Footer from "../component/Footer";
 import Header from "../component/Header";
 import MenuCard from "../component/MenuCard";
 import Nav from "../component/Nav";
@@ -20,6 +21,7 @@ const Menu = ({ food }) => {
         }
 
       </div>
+      <Footer />
     </>
   );
 }

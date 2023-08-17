@@ -9,7 +9,7 @@ function MenuCard({ data }) {
 console.log(data);
   return (
     <Card style={{ width: '18rem', cursor: 'pointer' }} onClick={() => {
-      navigate('/'); //페이지 구현하면 정하기
+      navigate("/detail/" + data.id)
     }}>
 
       <Card.Img variant="top" src={data.img} className='img' />

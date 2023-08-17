@@ -5,7 +5,7 @@
   height: 480px;
 }
 
-.title {
+.Login .title {
   font-size: 25px;
   text-align: center;
   margin: 40px 0;
@@ -16,12 +16,12 @@ form {
 }
 
 .member-login {
-  margin: 20px 0;
+  margin: 20px 20px;
   font-size: 18px;
 }
 
 .idpw input {
-  margin: 5px 0;
+  margin: 5px 0 5px 20px;
   width: 300px;
   height: 30px;
   border: 1px solid lightgray;
@@ -37,7 +37,7 @@ form {
   border: gray;
 }
 
-.log {
+.Login .log {
   display: grid;
   grid-template-columns: repeat(2, 350px);
 }
@@ -57,6 +57,7 @@ label {
   display: flex;
   align-items: center;
   width: 600px;
+  margin-top: 40px;
 }
 
 .Login .btn button {
@@ -71,4 +72,8 @@ label {
 .Login .btn :first-child {
   background-color: gray;
   color: white;
+}
+
+.Login hr {
+  margin: 0 30px;
 }

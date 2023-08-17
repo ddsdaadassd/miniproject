@@ -11,22 +11,22 @@ header {
     font-size: 14px;
   }
   
-  .search {
+  header .search {
     float: right;
     margin-right: 30px;
   }
   
-  input {
+  header input {
     width: 200px;
     height: 25px;
   }
   
-  button {
+  header button {
     width: 30px;
     height: 25px;
   }
   
-  .logo {
+  header .logo {
     clear: both;
     text-align: center;
   }
