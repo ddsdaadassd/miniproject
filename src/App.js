@@ -17,21 +17,24 @@ import Cart from './pages/Cart';
 function App() {
 
   const [food, setFood] =useState(data);
+  const convertPrice = (price) => {
+  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+  }
 
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<Main food={food}/>} />
-        <Route path='/menu' element={<Menu food={food}/>} />
-         <Route path='/new' element={<New food={food}/>} />
-        <Route path='/best' element={<Best food={food}/>} />
-        <Route path='/set' element={<Set food={food}/>} />
+        <Route path='/' element={<Main food={food} convertPrice={convertPrice}/>} />
+        <Route path='/menu' element={<Menu food={food} convertPrice={convertPrice}/>} />
+         <Route path='/new' element={<New food={food} convertPrice={convertPrice}/>} />
+        <Route path='/best' element={<Best food={food} convertPrice={convertPrice}/>} />
+        <Route path='/set' element={<Set food={food} convertPrice={convertPrice}/>} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/cart' element={<Cart />} /> 
         <Route path='/id' element={<SearchId />} />
         <Route path='/pw' element={<SearchPw />} />
-        <Route path='/detail/:id' element={<Detail food={food}/>} />
+        <Route path='/detail/:id' element={<Detail food={food} convertPrice={convertPrice}/>} />
       </Routes>
     </div>
   );

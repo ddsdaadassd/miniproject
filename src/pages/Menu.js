@@ -4,7 +4,7 @@ import MenuCard from "../component/MenuCard";
 import Nav from "../component/Nav";
 import '../pages-css/Menu.css';
 
-const Menu = ({ food }) => {
+const Menu = ({ food, convertPrice}) => {
   return (
     <>
       <Header />
@@ -14,7 +14,7 @@ const Menu = ({ food }) => {
         {
           food.map((data, i) => {
             return (
-              <MenuCard data={data} key={i} />
+              <MenuCard data={data} key={i} convertPrice={convertPrice}/>
             );
 
           })

@@ -7,7 +7,7 @@ import Nav from '../component/Nav';
 import { useState } from 'react';
 import Footer from '../component/Footer';
 
-const Main = ({ food }) => {
+const Main = ({ food, convertPrice }) => {
   const [md, setMd] = useState(food.slice(0, 4));
   const [best, setBest] = useState(food.slice(4, 6));
   const [newitem, setNewItem] = useState(food.slice(10, 12));
@@ -43,7 +43,7 @@ const Main = ({ food }) => {
                 {
                   md.map((data, i) => {
                     return (
-                      <MenuCard data={data} key={i} />
+                      <MenuCard data={data} key={i} convertPrice={convertPrice}/>
                     );
                   })
                 }
@@ -56,7 +56,7 @@ const Main = ({ food }) => {
                 {
                   best.map((data, i) => {
                     return (
-                      <MenuCard data={data} key={i} />
+                      <MenuCard data={data} key={i} convertPrice={convertPrice}/>
                     );
 
                   })
@@ -70,7 +70,7 @@ const Main = ({ food }) => {
                 {
                   newitem.map((data, i) => {
                     return (
-                      <MenuCard data={data} key={i} />
+                      <MenuCard data={data} key={i} convertPrice={convertPrice}/>
                     );
 
                   })

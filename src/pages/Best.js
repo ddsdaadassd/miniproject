@@ -5,7 +5,7 @@ import Nav from '../component/Nav';
 import MenuCard from '../component/MenuCard';
 import Footer from '../component/Footer';
 
-const Best = ({ food }) => {
+const Best = ({ food, convertPrice }) => {
   const [bestMenu, setBestMenu] = useState(food.slice(0, 10))
   return (
     <>
@@ -15,7 +15,7 @@ const Best = ({ food }) => {
         {
           bestMenu.map((data, i) => {
             return (
-              <MenuCard data={data} key={i} />
+              <MenuCard data={data} key={i} convertPrice={convertPrice}/>
             );
           })
         }

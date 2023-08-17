@@ -3,17 +3,22 @@ import Footer from '../component/Footer';
 import Header from '../component/Header';
 import Navv from '../component/Nav';
 import '../pages-css/Detail.css';
-import { Nav } from "react-bootstrap";
-import { useDispatch, useSelector } from 'react-redux';
-import { addCount, subCount } from '../redux/store';
+import { useState } from 'react';
 
-const Detail = ({ food }) => {
+const Detail = ({ food, convertPrice }) => {
   const navigate = useNavigate();
   const { id } = useParams();
-  const dispatch = useDispatch();
-  const cart = useSelector((state) => state.cart)
+  const [count, setCount] = useState(1);
 
-  console.log(cart)
+  const addSub = (type) => {
+    if(type === 'add') {
+      setCount(count + 1)
+    } else {
+      if(count === 1) return;
+      setCount(count - 1)
+    }
+  }
+
   return (
     <>
       <Header />
@@ -26,18 +31,18 @@ const Detail = ({ food }) => {
           <div className='textbox'>
             <div>
               <p className='title'>{food[id].title}</p>
-              <p className='price'>가격: {food[id].price}</p>
+              <p className='price'>가격: {convertPrice(food[id].price)}원</p>
               <p className='cnt'>수량: 
               <button onClick={() => {
-                dispatch(subCount(food.id));
+                addSub('sub');
               }}>-</button>
-              {cart.count}
+              {count}
               <button onClick={() => {
-                dispatch(addCount(food.id));
+                addSub('add');
               }}>+</button>
               </p>
               <hr />
-              <p className='total'>총 가격: </p>
+              <p className='total'>총 가격: {convertPrice(Number(food[id].price) * count)}원</p>
             </div>
             <div className='btn'>
             <button onClick={() => {

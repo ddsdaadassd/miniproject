@@ -5,7 +5,7 @@ import Nav from '../component/Nav';
 import '../pages-css/Set.css';
 import Footer from '../component/Footer';
 
-const Set = ({ food }) => {
+const Set = ({ food, convertPrice }) => {
 
   const [setMenu, setSetMenu] = useState(food.slice(24, 32));
 
@@ -17,7 +17,7 @@ const Set = ({ food }) => {
         {
           setMenu.map((data, i) => {
             return (
-              <MenuCard data={data} key={i} />
+              <MenuCard data={data} key={i} convertPrice={convertPrice}/>
             );
           })
         }
