@@ -1,0 +1,23 @@
+.Cart {
+  padding: 80px;
+}
+
+.Cart .bigTitle {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.Cart .smallTitle {
+  font-size: 16px;
+  text-align: center;
+}
+
+.Cart img{
+  width: 50px;
+  height: 50px;
+}
+
+.Cart .list {
+  text-align: center;
+  
+}
