@@ -205,6 +205,25 @@ let data = [
     title: '티본스테이크+빠네파스타세트',
     price: '57800'
   },
+  //캐러셀
+  {
+    id : 32,
+    img : process.env.PUBLIC_URL + '/img/파스타캐러셀.png',
+    title: '빠네파스타',
+    price: '12900'
+  },
+  {
+    id : 33,
+    img : process.env.PUBLIC_URL + '/img/마라탕캐러셀.png',
+    title: '마라탕',
+    price: '12900'
+  },
+  {
+    id : 34,
+    img : process.env.PUBLIC_URL + '/img/우곱창전골캐러셀.png',
+    title: '우곱창전골',
+    price: '12900'
+  },
 
 
 ]

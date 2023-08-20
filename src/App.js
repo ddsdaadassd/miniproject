@@ -17,6 +17,7 @@ import Cart from './pages/Cart';
 function App() {
 
   const [food, setFood] =useState(data);
+  const [checkLists, setCheckLists] = useState([]);
   // 가격 콤마표시 정규식
   const convertPrice = (price) => {
   return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
@@ -32,7 +33,7 @@ function App() {
         <Route path='/set' element={<Set food={food} convertPrice={convertPrice}/>} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
-        <Route path='/cart' element={<Cart food={food} convertPrice={convertPrice}/>} /> 
+        <Route path='/cart' element={<Cart food={food} convertPrice={convertPrice} checkLists={checkLists} setCheckLists={setCheckLists}/>} /> 
         <Route path='/id' element={<SearchId />} />
         <Route path='/pw' element={<SearchPw />} />
         <Route path='/detail/:id' element={<Detail food={food} convertPrice={convertPrice}/>} />

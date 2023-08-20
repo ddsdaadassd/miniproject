@@ -11,18 +11,19 @@ const Main = ({ food, convertPrice }) => {
   const [md, setMd] = useState(food.slice(0, 4));
   const [best, setBest] = useState(food.slice(4, 6));
   const [newitem, setNewItem] = useState(food.slice(10, 12));
+  const navigate = useNavigate();
 
   function NoTransitionExample() {
     return (
       <Carousel slide={false}>
         <Carousel.Item>
-          <img src={`${food[0].img}`} text="First slide" />
+          <img src={`${food[32].img}`} text="빠네파스타" onClick={()=> navigate('/detail/'+food[16].id)}/>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={`${food[1].img}`} text="Second slide" />
+          <img src={`${food[33].img}`} text="마라탕"  onClick={()=> navigate('/detail/'+food[4].id)} />
         </Carousel.Item>
         <Carousel.Item>
-          <img src={`${food[2].img}`} text="Third slide" />
+          <img src={`${food[34].img}`} text="우곱창전골"  onClick={()=> navigate('/detail/'+food[17].id)}/>
         </Carousel.Item>
       </Carousel>
     );

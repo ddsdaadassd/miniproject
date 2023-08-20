@@ -159,11 +159,11 @@ const SignUp = () => {
 
           <div className='btn'>
             <button onClick={() => {
-              navigate('/login');
+              navigate('/');
             }} className='signup-btn'>취소</button>
             <button onClick={() => {
               window.confirm('회원가입완료');
-              navigate('/');
+              navigate('/login');
             }} className='signup-btn'>회원가입</button>
           </div>
         </form>
